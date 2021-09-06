@@ -1,0 +1,118 @@
+warning: LF will be replaced by CRLF in build/classes/aerolinea/VerVuelo.form.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/aerolinea/VerVuelo.form.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/aerolinea/VerVuelo.java.
+The file will have its original line endings in your working directory
+[1mdiff --git a/build/classes/aerolinea/VerVuelo$1.class b/build/classes/aerolinea/VerVuelo$1.class[m
+[1mindex 64dabb0..508b89d 100644[m
+Binary files a/build/classes/aerolinea/VerVuelo$1.class and b/build/classes/aerolinea/VerVuelo$1.class differ
+[1mdiff --git a/build/classes/aerolinea/VerVuelo.class b/build/classes/aerolinea/VerVuelo.class[m
+[1mindex 725a932..2c08a9b 100644[m
+Binary files a/build/classes/aerolinea/VerVuelo.class and b/build/classes/aerolinea/VerVuelo.class differ
+[1mdiff --git a/build/classes/aerolinea/VerVuelo.form b/build/classes/aerolinea/VerVuelo.form[m
+[1mindex 61b5b85..8812575 100644[m
+[1m--- a/build/classes/aerolinea/VerVuelo.form[m
+[1m+++ b/build/classes/aerolinea/VerVuelo.form[m
+[36m@@ -139,7 +139,8 @@[m
+             <Component class="javax.swing.JTable" name="tblBvuelos">[m
+               <Properties>[m
+                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">[m
+[31m-                  <Table columnCount="7" rowCount="0">[m
+[32m+[m[32m                  <Table columnCount="8" rowCount="0">[m
+[32m+[m[32m                    <Column editable="true" title="id" type="java.lang.Integer"/>[m
+                     <Column editable="false" title="Pasajero" type="java.lang.String"/>[m
+                     <Column editable="false" title="Hora" type="java.lang.String"/>[m
+                     <Column editable="false" title="Fecha" type="java.lang.String"/>[m
+[36m@@ -186,6 +187,11 @@[m
+                       <Editor/>[m
+                       <Renderer/>[m
+                     </Column>[m
+[32m+[m[32m                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">[m
+[32m+[m[32m                      <Title/>[m
+[32m+[m[32m                      <Editor/>[m
+[32m+[m[32m                      <Renderer/>[m
+[32m+[m[32m                    </Column>[m
+                   </TableColumnModel>[m
+                 </Property>[m
+                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">[m
+[1mdiff --git a/src/aerolinea/VerVuelo.form b/src/aerolinea/VerVuelo.form[m
+[1mindex 61b5b85..8812575 100644[m
+[1m--- a/src/aerolinea/VerVuelo.form[m
+[1m+++ b/src/aerolinea/VerVuelo.form[m
+[36m@@ -139,7 +139,8 @@[m
+             <Component class="javax.swing.JTable" name="tblBvuelos">[m
+               <Properties>[m
+                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">[m
+[31m-                  <Table columnCount="7" rowCount="0">[m
+[32m+[m[32m                  <Table columnCount="8" rowCount="0">[m
+[32m+[m[32m                    <Column editable="true" title="id" type="java.lang.Integer"/>[m
+                     <Column editable="false" title="Pasajero" type="java.lang.String"/>[m
+                     <Column editable="false" title="Hora" type="java.lang.String"/>[m
+                     <Column editable="false" title="Fecha" type="java.lang.String"/>[m
+[36m@@ -186,6 +187,11 @@[m
+                       <Editor/>[m
+                       <Renderer/>[m
+                     </Column>[m
+[32m+[m[32m                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">[m
+[32m+[m[32m                      <Title/>[m
+[32m+[m[32m                      <Editor/>[m
+[32m+[m[32m                      <Renderer/>[m
+[32m+[m[32m                    </Column>[m
+                   </TableColumnModel>[m
+                 </Property>[m
+                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">[m
+[1mdiff --git a/src/aerolinea/VerVuelo.java b/src/aerolinea/VerVuelo.java[m
+[1mindex d5b925a..568fa9f 100644[m
+[1m--- a/src/aerolinea/VerVuelo.java[m
+[1m+++ b/src/aerolinea/VerVuelo.java[m
+[36m@@ -61,14 +61,14 @@[m [mpublic class VerVuelo extends javax.swing.JFrame {[m
+ [m
+             },[m
+             new String [] {[m
+[31m-                "Pasajero", "Hora", "Fecha", "Numero de vuelo", "destinno", "asiento", "Tipo de pago"[m
+[32m+[m[32m                "id", "Pasajero", "Hora", "Fecha", "Numero de vuelo", "destinno", "asiento", "Tipo de pago"[m
+             }[m
+         ) {[m
+             Class[] types = new Class [] {[m
+[31m-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class[m
+[32m+[m[32m                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class[m
+             };[m
+             boolean[] canEdit = new boolean [] {[m
+[31m-                false, false, false, false, false, true, true[m
+[32m+[m[32m                true, false, false, false, false, false, true, true[m
+             };[m
+ [m
+             public Class getColumnClass(int columnIndex) {[m
+[36m@@ -276,17 +276,17 @@[m [mthis.setVisible(false);[m
+             ResultSet rs;[m
+             AerolineaConexion con = new AerolineaConexion();[m
+             con.conectar();[m
+[31m-            String consulta = "SELECT pasajero,hora,fecha,nvuelo,destino,asiento,tpago FROM vuelos WHERE id = ?";[m
+[32m+[m[32m            String consulta = "SELECT id,pasajero,hora,fecha,nvuelo,destino,asiento,tpago FROM vuelos WHERE id = ?";[m
+             ps = con.conexion.prepareStatement(consulta);[m
+             ps.setInt(1,id);[m
+             [m
+             rs = ps.executeQuery();[m
+             while (rs.next()) {[m
+                 this.id.setText(String.valueOf(id));[m
+[31m-                nombre.setText(rs.getString("pasajero"));[m
+[31m-                hora.setText(rs.getString("hora"));[m
+[31m-                fecha.setText(rs.getString("fecha"));[m
+[31m-                asiento.setText(rs.getString("asiento"));[m
+[32m+[m[32m                this.nombre.setText(rs.getString("pasajero"));[m
+[32m+[m[32m                this.hora.setText(rs.getString("hora"));[m
+[32m+[m[32m                this.fecha.setText(rs.getString("fecha"));[m
+[32m+[m[32m                this.asiento.setText(rs.getString("asiento"));[m
+                 [m
+                 [m
+             }[m
+[36m@@ -351,7 +351,7 @@[m [mthis.setVisible(false);[m
+         try {[m
+             AerolineaConexion con = new AerolineaConexion();[m
+             con.conectar();[m
+[31m-            String consulta = "SELECT pasajero,hora,fecha,nvuelo,destino,asiento,tpago FROM vuelos WHERE pasajero = ?";[m
+[32m+[m[32m            String consulta = "SELECT id,pasajero,hora,fecha,nvuelo,destino,asiento,tpago FROM vuelos WHERE pasajero = ?";[m
+             ps = con.conexion.prepareStatement(consulta);[m
+             ps.setString(1, pasajero);[m
+             rs = ps.executeQuery();[m
